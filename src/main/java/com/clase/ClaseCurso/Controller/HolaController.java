@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HolaController {
+    @GetMapping
+    public String presentacion(){
+        return "Clase de practica 9";
+    }
+    
     
     @GetMapping("/hola")
     public String decirHola(@RequestParam String nombre,
